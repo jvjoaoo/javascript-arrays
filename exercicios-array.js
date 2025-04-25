@@ -16,7 +16,39 @@ const arrayEsparso = [3, , 8, , 9];
 
  //console.log(`Lista de compras depois da alteração: ${listaDeCompras}`)
 
- /*3. Crie um array vazio chamado meuArray e adicione 3 números inteiros de sua escolha utilizando o método push(). Imprima no console os itens presentes no array para verificar se os
+/*3. Crie um array vazio chamado meuArray e adicione 3 números inteiros de sua escolha utilizando o método push(). Imprima no console os itens presentes no array para verificar se os
   números foram adicionados. Em seguida, substitua o primeiro elemento do array (índice 0) pelo dobro do seu valor atual. Imprima no console o array atualizado para verificar a mudança.*/
 
-  
+  const meuArray = [];
+
+  meuArray.push(4,5,7);
+  meuArray[0] *= 2;
+
+  //console.log(meuArray.length);
+  //console.log(meuArray);
+
+/*4. Desenvolva um programa em Node.js que crie um array vazio e atribua valores a ele utilizando o método push(). Adicione três números inteiros ao array e, em seguida, exiba o
+   array resultante.*/
+
+   const listaNumerica = [];
+
+   listaNumerica.push(45, 8, 29);
+
+   //console.log(listaNumerica);
+
+/*5. Desenvolva um programa em Node.js que simule uma clínica veterinária. Crie um array vazio chamado clinica que representará a fila de animais na clínica. Em um primeiro momento, simule a
+ chegada de três animais diferentes e exiba a lista de animais no console. Após a exibição, remova os animais da lista um por vez e, por fim, exiba no console o estado final da lista.*/
+
+ const clinica = [];
+
+ clinica.push('Cachorro', ' Gato', ' Calopsita');
+ console.log(`Primeiros da fila: ${clinica}`);
+ 
+ const atendido1 = clinica.shift();
+ console.log(`${atendido1} foi atendido. Fila agora: ${clinica.join(', ')}`);
+
+ const atendido2 = clinica.shift();
+ console.log(`${atendido2} foi atendido. Fila agora: ${clinica.join(', ')}`);
+
+ const atendido3 = clinica.shift();
+ console.log(`${atendido3} foi atendido. Fila agora: ${clinica.join(', ')}`);
