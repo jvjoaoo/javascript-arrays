@@ -81,7 +81,7 @@ const contagemNumerica = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const parteNumeros = contagemNumerica.slice(3, 8);
 
-console.log(parteNumeros);
+//console.log(parteNumeros);
 
 /* 3. Dado o array frutas contendo frutas que desejamos comprar na feira: const frutas = ['Maçã', 'Banana', 'Laranja', 'Limão', 'Abacaxi'] Utilize o método splice para remover as 
  frutas no índice 2 e 3 e, em seguida, adicione as frutas 'Kiwi' e 'Pêssego' nesses mesmos índices. */
@@ -103,10 +103,10 @@ function cardapioDoDia() {
 
   const menuCompleto = menuPrincipal.concat(menuDeSobremesas);
 
-  return `${menuCompleto}`
+  return `${menuCompleto}`;
 }
 
-console.log(cardapioDoDia());
+//console.log(cardapioDoDia());
 
 /* 5. Crie uma lista bidimensional com 3 linhas e 3 colunas, onde cada elemento seja uma matriz 3x3 com valores iniciando em 1 e aumentando em 1 a cada elemento. */
 
@@ -132,3 +132,48 @@ for (let i = 0; i < 3; i++) {
 matriz[2][1] = 15;
 
 //matriz.forEach(row => console.log('Matriz atualizada com o novo elemento:', row));
+
+/* -> laço de repetição for
+const matriculados = ["Ygor", "Carlos", "Fernanda", "Maria"];
+
+for (let i = 0; i < matriculados.length; i++) {
+  console.log(matriculados[i]);
+}
+*/
+
+// -> laço de repetição while
+const matriculados = ["Ygor", "Carlos", "Fernanda", "Maria"];
+
+//let i = 0;
+
+//while(i < matriculados.length){
+//  console.log(matriculados[i])
+//  i++
+//}
+
+const contador = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//for (let i = 0; i < contador.length; i++){
+//  console.log(contador[i])
+
+//}
+
+const contadorInverso = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+//let i = 0;
+
+//while(i < contadorInverso.length){
+//console.log(contadorInverso[i])
+
+//i++;
+//}
+
+let i = 5;
+let valorA = i++;
+let valorB = ++i;
+
+console.log("O valor de valorA é:", valorA);
+console.log("O valor de valorB é:", valorB);
+
+//O operador i++ faz um pós-incremento, o que significa que primeiro atribui o valor atual de i a valorA e depois incrementa i. 
+// Em seguida, o operador ++i incrementa o valor de i e atribui esse valor a valorB.
