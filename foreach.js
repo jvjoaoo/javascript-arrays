@@ -6,5 +6,15 @@ notas.forEach(function (nota){
     somaDasNotas += nota;
 })
 
+
+/* -> separando a função  
+
+notas.forEach(somaNotas)
+
+function somaNotas(nota){
+    somaDasNotas += nota;
+}
+*/     
+
 const media = somaDasNotas / notas.length;
 console.log(`a média das notas é ${media}`)
